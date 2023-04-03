@@ -1,4 +1,4 @@
-# St. Joseph School A.A
+# 🏫 St. Joseph School A.A
 #### A school website made for St. Joseph School Addis Ababa
 
 
