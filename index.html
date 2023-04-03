@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>St. Joseph A.A</title>
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <div id="nav-bar">
+      <ul>
+        <li id="home-link"><a class="nav-link" href="#">Home</a></li>
+        <button id="menu-btn">☰</button>
+        <span id="sub-menus">
+            <li><a class="nav-link" href="#">Home</a></li>
+            <li><a class="nav-link" href="./events.html">Events</a></li>
+            <div id="drop-down-container">
+            <li id="drop-down-link" class="nav-link">Clubs</li>
+            <ul id="drop-down-content">
+                <li><a href="">CTP</a></li>
+                <li><a href="">Interact</a></li>
+                <li><a href="">አእምሮ</a></li>
+                <li><a href="">Environmental</a></li>
+            </ul>
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+        </span>
+        </div>
+      </ul>
+    </div>
+    <!-- header image slide show -->
+    <div id="slide-show">
+      <img id="lassalian-logo" src="./Images/lassalian.png" alt="">
+      <div class="slide-container" style="background-image: url('./Images/HED2.JPG'); ">
+        <p style="color: white; animation-name: slide-in-from-left;">Saint Joseph School</p>
+        <p style="color: red; animation-name: slide-in-from-right;">Addis Ababa</p>
+      </div>
+      <div class="slide-container" style="background-image: url('./Images/HED3.JPG')";>
+        <p style="animation-name: zoom-in">
+            &ldquo;High Standard for all<br>High Expectation from all &rdquo;
+        </p>
+      </div>
+    </div>
+
+    <!-- intro section -->
+    <div id="intro"  class="container">
+      <img class="sjs-logo" src="./Images/SJS_logo.png" alt="SJS">
+      <h1>Saint Joseph School</h1>
+      <h4>Addis Ababa</h4>
+      <h4>St. Joseph School in Addis Ababa, Ethiopia was established in 1959 at the request of Emperor Haile Silassie I, King of Ethiopia, to educate boys from grades one to 12. St. Joseph’s serves more than 1,600 students in full-day classes with approximately 100 teachers and support staff members. St. Joseph School admits students to first grade at the age of six or seven, and many students graduate at the age of 18.</h4>
+      <h3></h3>
+    </div>
+
+    <!-- image gallery -->
+    <div id="image-modal-container" onclick="this.style.display = 'none';">
+        <p><button id="close-modal-btn" onclick="this.parentNode.parentNode.style.display = 'none';">X</button></p>
+        <img id="modal-image" src="./Images/HED1.JPG" alt="modal-image">
+ 
+    </div>
+    <div id="gallery" class="container">
+      <img class="gallery-image" src="./Images/HED1.JPG" onclick="enlarge_image(this)" alt="gallery-image">
+      <img class="gallery-image" src="./Images/IMG1.JPG" onclick="enlarge_image(this)" alt="gallery-image">
+      <img class="gallery-image" src="./Images/IMG2.JPG" onclick="enlarge_image(this)" alt="gallery-image">
+      <img class="gallery-image" src="./Images/HED1.JPG" onclick="enlarge_image(this)" alt="gallery-image">
+      <img class="gallery-image" src="./Images/IMG1.JPG" onclick="enlarge_image(this)" alt="gallery-image">
+      <img class="gallery-image" src="./Images/IMG2.JPG" onclick="enlarge_image(this)" alt="gallery-image">
+    </div>
+
+    <!-- about the School -->
+    <div id="about">
+      <img class="sjs-logo" src="./Images/SJS_logo.png" alt="SJS">
+      <h1>About the School</h1>
+      <div id="about-section">
+        <div>
+          <h3>History</h3>
+          <h4>St. Joseph in Addis Ababa was established in 1959 to educate boys in grades one through 12.</h4>
+        </div>
+        <div>
+          <h3>Headmaster</h3>
+          <h4>
+              Brother Daniel Carlin, FSC <br />
+              Email: <a href="mailto:jpmart2k19@gmail.com">danielcarlin4@gmail.com</a>
+          </h4>
+        </div>
+        <div>
+          <h3>Achivements</h3>
+          <h4>The school has maintained a 100 percent graduation and admission rate to national and international universities including Princeton, Cambridge, Yale and Harvard.</h4>
+        </div>
+        <div>
+          <h3>Vision</h3>
+          <h4>The school's vision is to promote an innovative learning experience and inspire students to become empathetic and faithful members of their community.</h4>
+        </div>
+      </div>
+    </div>
+    <!-- countact information  -->
+    <div id="contact">
+      <h1>Contact Us</h1><br>
+      <div id="contact-address">
+        <p>Meskel Square, A.A</p>
+        <p><span style="color: red;font-size: 24px;">&phone;</span> Phone: 011 551 0608</p>
+        <p><span style="color: red;font-size: 24px;">&#9993;</span> PO BOX: 796</p>
+      </div>
+      <form>
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <input type="text" placeholder="Message">
+        <p style="text-align: right;width: 100%;"><button type="submit">SEND</button></p>
+      </form>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

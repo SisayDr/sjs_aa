@@ -1,0 +1,318 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#nav-bar {
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  min-height: 50px;
+  padding-left: 3%;
+  background: #607d8b;
+}
+#home-link a {
+  display: none;
+  width: 50px;
+}
+#menu-btn {
+  display: none;
+  position: absolute;
+  right: 15px;
+  top: 0;
+  min-height: 50px;
+  padding: 0 10px;
+  border: none;
+  background: transparent;
+  font-size: 32px;
+}
+#sub-menus {
+  display: inline;
+}
+#sub-menus:hover,
+#menu-btn:hover + #sub-menus {
+  display: block;
+}
+.nav-link {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 15px 25px;
+  font-size: 18px;
+}
+.nav-link:hover {
+  background: #ccc;
+  color: #333;
+}
+ul,
+li {
+  list-style: none;
+  display: inline;
+}
+#drop-down-container {
+  display: inline;
+  position: relative;
+}
+#drop-down-link:hover + #drop-down-content,
+#drop-down-content:hover {
+  display: block;
+}
+#drop-down-content {
+  display: none;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  background: white;
+  border: 1px solid #eee;
+}
+#drop-down-content li {
+  display: block;
+  padding: 10px 20px;
+}
+#drop-down-content li:hover {
+  background: #ccc;
+}
+#drop-down-content a {
+  text-decoration: none;
+  color: #333;
+}
+/***** nav bar style ends here */
+.container {
+  max-width: 1024px;
+  margin: 20px auto;
+}
+/* imgae slide show styles statrs here */
+#slide-show div {
+  position: relative;
+}
+.slide-container {
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  aspect-ratio: 16/9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 6.5vw;
+  text-align: center;
+  color: #ffc107;
+}
+#lassalian-logo {
+  position: absolute;
+  z-index: 10;
+  right: 10px;
+  width: 25vw;
+}
+.slide-container p {
+  font-weight: bold;
+  text-shadow: 1px -1px 1px #607d8b, 2px -2px 1px #607d8b, 2px -3px 1px #607d8b;
+  z-index: 3;
+  animation-duration: 2s;
+}
+/* image slide show styles end here */
+
+/* intro section styles start here  */
+#intro {
+  padding: 50px 20px;
+  margin: auto;
+  text-align: center;
+  color: #333;
+}
+h4 {
+  font-weight: 400;
+  font-size: 20px;
+  padding: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.sjs-logo {
+  border-radius: 50%;
+  width: 15%;
+}
+
+/* intro section styles end here  */
+
+/* image gallery styles end here  */
+#image-modal-container {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 500;
+  background: rgba(54, 53, 53, 0.8);
+}
+#modal-image,
+#image-modal-container p {
+  width: 90%;
+  text-align: right;
+  max-width: 1280px;
+}
+#close-modal-btn {
+  background: #f02b2b;
+  cursor: pointer;
+  border: none;
+  padding: 10px 15px;
+  margin: 0;
+  font-size: 16px;
+  color: white;
+}
+#gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.gallery-image {
+  cursor: pointer;
+  width: 320px;
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+
+/* about section styles start here  */
+#about {
+  width: 96%;
+  margin: 20px auto;
+  padding-top: 30px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  text-align: center;
+  font-weight: 100;
+  color: #333;
+}
+#about-section {
+  padding: 30px 5px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+#about-section div {
+  width: 420px;
+  max-width: 100%;
+  margin-top: 20px;
+}
+#about-section div h1 {
+  color: #00ffff;
+}
+#about-section div h3 {
+  color: #ff9800;
+}
+#about-section div h4 {
+  font-size: 110%;
+  color: #607d8b;
+}
+
+/* contact section styles start here */
+#contact {
+  font-size: 18px;
+  background: #f1f1f1;
+  width: 90%;
+  margin: 20px auto;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  padding: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+#contact h1 {
+  text-align: center;
+  width: 100%;
+}
+#contact div,
+form {
+  width: 45%;
+  min-width: 400px;
+  text-align: center;
+  margin-top: 30px;
+  padding: 20px;
+}
+#contact form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+}
+#contact form input {
+  flex-grow: 1;
+  min-width: 40%;
+  padding: 10px;
+}
+#contact form button[type="submit"] {
+  cursor: pointer;
+  background-color: #000000;
+  border: none;
+  color: white;
+  padding: 12px 20px;
+}
+#contact form button[type="submit"]:hover {
+  background-color: #aaa;
+}
+/* animations */
+@keyframes zoom-in {
+  from {
+    scale: 0.5;
+  }
+}
+@keyframes slide-in-from-left {
+  0% {
+    opacity: 0;
+    margin-left: -100%;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+@keyframes slide-in-from-right {
+  0% {
+    opacity: 0;
+    margin-right: -100%;
+  }
+  100% {
+    margin-rgiht: 0;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  #intro {
+    padding: 10px;
+  }
+  .sjs-logo {
+    width: 25%;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  #nav-bar ul li,
+  #nav-bar ul li a {
+    display: block;
+  }
+  #menu-btn {
+    display: block;
+  }
+  #sub-menus {
+    height: calc(100vh - 50px);
+    text-align: center;
+    width: 70%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 60px;
+    background: #333;
+    display: none;
+  }
+  #sub-menus .nav-link {
+    margin: 20px auto;
+    font-size: 24px;
+    letter-spacing: 2px;
+  }
+  #drop-down-content {
+    position: relative;
+    background: #ccc;
+    margin-top: -55px;
+    margin-bottom: 50px;
+  }
+}
